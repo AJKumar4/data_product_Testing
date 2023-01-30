@@ -22,7 +22,7 @@ inputPorts:
       createEntity: true
       entityName: houses_Madrid.parquet
       type: s3-bucket
-      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
+      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars_Data.csv
       entityFilterPatternMatch: "*"
       sourceSchemaUrn: urn:dv:schema:9d4716d4
       projectSchemaUrn: urn:dv:schema:9d4716d6
