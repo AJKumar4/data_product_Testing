@@ -61,4 +61,4 @@ stateManagement:
       changeTrackColumns:
         - test
 transformation:
-  sql: select * from user1, user2
+  sql: select * from user1
