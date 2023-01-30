@@ -1,8 +1,7 @@
 version: 0.0.1
 discoveryPort:
-  name: "Multiple input ports Webhook validation"
-  description: Data product to verify the webhook implementation
-    type (Pisos, Aticos, Duplex, etc)
+  name: "csv file as source input ports Webhook validation"
+  description: Data product to verify the webhook implementation with csv file as source
   category: customer
   image: http://google.com
   autofillUserinfo: true
