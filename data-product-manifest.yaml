@@ -35,9 +35,7 @@ inputPorts:
       actualTimeColumn:
         - test
       projection:
-        - "sl no"
-        - brand
-        - model
+        - "*"
   - alias: user2_s3_input_port
     description: string
     tags: []
@@ -62,9 +60,7 @@ inputPorts:
       actualTimeColumn:
         - test
       projection:
-        - "sl no"
-        - brand
-        - model
+        - "*"
 stateManagement:
   alias: multiple_input_Test
   refreshInterval: 00 10 * * *
