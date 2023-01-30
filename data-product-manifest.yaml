@@ -1,0 +1,78 @@
+version: 0.0.1
+discoveryPort:
+  name: "Multiple input ports Demo-1"
+  description: Data product to verify the webhook implementation
+    type (Pisos, Aticos, Duplex, etc)
+  category: customer
+  image: http://google.com
+  autofillUserinfo: true
+  tags:
+    - Madrid
+    - House Rental
+  extra: {}
+inputPorts:
+  - alias: user1_S3_input_port
+    description: string
+    tags: []
+    extra: {}
+    syncType: pull
+    type: s3
+    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
+    entityId:
+      alias: user1
+      createEntity: true
+      entityName: mpay
+      type: s3-bucket
+      entityPath: s3a://dp-input-bucket/mpay-tx
+      entityFilterPatternMatch: "*"
+      sourceSchemaUrn: urn:dv:schema:9d4716d4
+      projectSchemaUrn: urn:dv:schema:9d4716d6
+      fileFormat: csv
+      delimiter: ","
+      filter: ""
+      processingTimeColumn:
+        - test
+      actualTimeColumn:
+        - test
+      projection:
+        - "*"
+  - alias: user2_s3_input_port
+    description: string
+    tags: []
+    extra: {}
+    syncType: pull
+    type: s3
+    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
+    entityId:
+      alias: user2
+      createEntity: true
+      entityName: mpay2
+      type: s3-bucket
+      entityPath: s3a://dp-input-bucket/mpay-tx
+      entityFilterPatternMatch: "*"
+      sourceSchemaUrn: urn:dv:schema:9d4716d4
+      projectSchemaUrn: urn:dv:schema:9d4716d6
+      fileFormat: csv
+      delimiter: ","
+      filter: ""
+      processingTimeColumn:
+        - test
+      actualTimeColumn:
+        - test
+      projection:
+        - "*"
+stateManagement:
+  alias: multiple_input_Test
+  refreshInterval: 00 10 * * *
+  updateStrategy: SCD-2
+  productStoreState:
+    logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
+    retentionVersions: "10"
+  updateStrategyOptions:
+    - entityRef: test
+      uniqueKeyColumns:
+        - test
+      changeTrackColumns:
+        - test
+transformation:
+  sql: select * from user1
