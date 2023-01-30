@@ -35,9 +35,19 @@ inputPorts:
       actualTimeColumn:
         - test
       projection:
-        - "sl no"
-        - brand
-        - model
+        - Model	
+        - mpg	
+        - cyl	
+        - disp
+        - hp	
+        - drat	
+        - wt	
+        - qsec	
+        - vs	
+        - am	
+        - gear	
+        - carb
+
 stateManagement:
   alias: multiple_input_Test
   refreshInterval: 00 10 * * *
