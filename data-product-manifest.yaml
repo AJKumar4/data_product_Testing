@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "Multiple input ports Webhook validation"
+  name: "Multiple input ports Demo"
   description: Data product to verify the webhook implementation
     type (Pisos, Aticos, Duplex, etc)
   category: customer
@@ -23,7 +23,7 @@ inputPorts:
       createEntity: true
       entityName: houses_Madrid.parquet
       type: s3-bucket
-      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
+      entityPath: s3a://dp-input-bucket/mpay-tx
       entityFilterPatternMatch: "*"
       sourceSchemaUrn: urn:dv:schema:9d4716d4
       projectSchemaUrn: urn:dv:schema:9d4716d6
@@ -50,7 +50,7 @@ inputPorts:
       createEntity: true
       entityName: cars1
       type: s3-bucket
-      entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars1.csv
+      entityPath: s3a://dp-input-bucket/mpay-tx
       entityFilterPatternMatch: "*"
       sourceSchemaUrn: urn:dv:schema:9d4716d4
       projectSchemaUrn: urn:dv:schema:9d4716d6
