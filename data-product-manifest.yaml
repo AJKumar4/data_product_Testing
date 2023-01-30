@@ -3,7 +3,7 @@ discoveryPort:
   name: "csv file as source input ports Webhook validation"
   description: Data product to verify the webhook implementation with csv file as source
   category: customer
-  image: http://google.com
+  image: http:
   autofillUserinfo: true
   tags:
     - Madrid
