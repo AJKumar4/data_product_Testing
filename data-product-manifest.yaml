@@ -28,6 +28,7 @@ inputPorts:
       projectSchemaUrn: urn:dv:schema:9d4716d6
       fileFormat: csv
       delimiter: ","
+      "header": true
       filter: ""
       processingTimeColumn:
         - test
