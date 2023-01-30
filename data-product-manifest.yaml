@@ -1,8 +1,7 @@
 version: 0.0.1
 discoveryPort:
-  name: "Multiple input ports Demo-1"
-  description: Data product to verify the webhook implementation
-    type (Pisos, Aticos, Duplex, etc)
+  name: "Multiple S3 source input Ports Demo"
+  description: Data product to verify the multiple source implementation
   category: customer
   image: http://google.com
   autofillUserinfo: true
@@ -36,7 +35,7 @@ inputPorts:
         - test
       projection:
         - "*"
-  - alias: user2_s3_input_port
+  - alias: user2_S3_input_port
     description: string
     tags: []
     extra: {}
