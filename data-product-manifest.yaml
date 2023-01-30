@@ -1,13 +1,13 @@
 version: 0.0.1
 discoveryPort:
   name: Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
-  description: Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
+  description: "Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
   Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
   Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
   Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
   Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
   Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
-  Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover.
+  Manifest file to verify the hover functionality in the Application UI. Full name to be displayed in Hover."
   category: customer
   image: http://google.com
   autofillUserinfo: true
