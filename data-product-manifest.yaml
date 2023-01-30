@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "csv file as source input ports Webhook validation"
+  name: "csv file as source input port"
   description: Data product to verify the webhook implementation with csv file as source
   category: customer
   image: http:
