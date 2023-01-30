@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "Multiple S3 source input Ports Demo"
+  name: "Multiple S3 source input Ports Demo -1"
   description: Data product to verify the multiple source implementation
   category: customer
   image: http://google.com
