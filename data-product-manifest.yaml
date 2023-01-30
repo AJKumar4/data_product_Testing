@@ -1,7 +1,7 @@
 version: 0.0.1
 discoveryPort:
   name: "Multiple S3 source input Ports Demo -1"
-  description: Data product to verify the multiple source implementation
+  description: Data product to verify the multiple source implementation - Webhook implementation
   category: customer
   image: http://google.com
   autofillUserinfo: true
