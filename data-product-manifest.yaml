@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "csv file as source input port"
+  name: "csv file input port"
   description: Data product to verify the webhook implementation with csv file as source
   category: customer
   image: http://www.google.com
@@ -10,17 +10,17 @@ discoveryPort:
     - House Rental
   extra: {}
 inputPorts:
-  - alias: user1_S3_input_port
+  - alias: user1_S3_csv_input_port
     description: string
     tags: []
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
+    sourceUrn: urn:dv:datasource:fc403696-0d2b-40a8-8526-f2e6be449c9d
     entityId:
       alias: user1
       createEntity: true
-      entityName: houses_Madrid.parquet
+      entityName: Multiple_Input_test2.cars_Data.csv
       type: s3-bucket
       entityPath: s3://dp-input-bucket/Multiple_Input_test2/cars_Data.csv
       entityFilterPatternMatch: "*"
@@ -47,7 +47,6 @@ inputPorts:
         - am	
         - gear	
         - carb
-
 stateManagement:
   alias: multiple_input_Test
   refreshInterval: 00 10 * * *
