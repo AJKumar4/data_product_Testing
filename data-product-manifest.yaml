@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "Multiple input ports Demo"
+  name: "Multiple input ports Demo-1"
   description: Data product to verify the webhook implementation
     type (Pisos, Aticos, Duplex, etc)
   category: customer
@@ -21,7 +21,7 @@ inputPorts:
     entityId:
       alias: user1
       createEntity: true
-      entityName: houses_Madrid.parquet
+      entityName: mpay
       type: s3-bucket
       entityPath: s3a://dp-input-bucket/mpay-tx
       entityFilterPatternMatch: "*"
@@ -46,7 +46,7 @@ inputPorts:
     entityId:
       alias: user2
       createEntity: true
-      entityName: cars1
+      entityName: mpay2
       type: s3-bucket
       entityPath: s3a://dp-input-bucket/mpay-tx
       entityFilterPatternMatch: "*"
@@ -75,4 +75,4 @@ stateManagement:
       changeTrackColumns:
         - test
 transformation:
-  sql: select * from user1, user2
+  sql: select * from user1
