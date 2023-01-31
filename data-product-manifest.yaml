@@ -15,7 +15,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd
+    sourceUrn: urn:dv:datasource:d6b60e72-ac84-462e-8d6d-c6cc428408fb
     entityId:
       alias: maf_pay_tx
       createEntity: true
@@ -24,7 +24,7 @@ inputPorts:
       entityFilterPatternMatch: "*.csv"
       incrematalFetchNamePattern: "MAFPay_Transactions_#tansationDate#_*"
       incremetal: true
-      sourceSchemaUrn: urn:dv:schema:9d4716d4
+      sourceSchemaUrn: urn:dv:datasource:d6b60e72-ac84-462e-8d6d-c6cc428408fb
       projectSchemaUrn: urn:dv:schema
       filter: ""
       fileFormat: csv
