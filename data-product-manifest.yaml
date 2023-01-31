@@ -15,7 +15,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:d6b60e72-ac84-462e-8d6d-c6cc428408fb
+    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
     entityId:
       alias: maf_pay_tx
       createEntity: true
@@ -42,7 +42,7 @@ stateManagement:
   refreshInterval: 00 10 * * *
   updateStrategy: append
   productStoreState:
-    logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740
+    logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: urn:dv:datasource:6d4714c3
