@@ -1,6 +1,6 @@
 version: 0.0.1
 discoveryPort:
-  name: "csv file input port"
+  name: "invalid csv input port"
   description: Data product to verify the webhook implementation with csv file as source
   category: customer
   image: http://www.google.com
