@@ -33,7 +33,8 @@ inputPorts:
       actualTimeColumn:
         - created_date
       projection:
-        - '*'
+        - 'brand name'
+        - 'sl no'
         
 stateManagement:
   alias: maf_pay_tx
