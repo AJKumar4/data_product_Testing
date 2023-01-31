@@ -4,7 +4,7 @@ discoveryPort:
   name: Invalid Source URN manifest file
   description: Maf pay transation demo
   category: customer
-  image: http://google.com
+  image: http:
   autofillUserinfo: true
   tags: []
   extra: {}
