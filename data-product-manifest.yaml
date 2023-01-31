@@ -4,7 +4,7 @@ discoveryPort:
   name: non critical errors manifest file
   description: Maf pay transation demo
   category: customer
-  image: http:\\www.google.com
+  image: http://www.google.com
   autofillUserinfo: true
   tags: []
   extra: {}
