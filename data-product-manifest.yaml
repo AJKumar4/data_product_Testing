@@ -50,4 +50,4 @@ stateManagement:
       changeTrackColumns:
         - nothing
 transformation:
-  sql: select * from dv_parquet_Test
+  sql: select built_year, buy_price, floor from dv_parquet_Test
