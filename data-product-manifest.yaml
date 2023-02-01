@@ -34,7 +34,9 @@ inputPorts:
       actualTimeColumn:
         - created_date
       projection:
-        - '*'
+        - built_year
+        - buy_price
+        - floor
         
 stateManagement:
   alias: dv_parquet
