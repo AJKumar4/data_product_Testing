@@ -1,35 +1,33 @@
 ---
 version: 0.0.1
 discoveryPort:
-  name: Maf Pay Tx CSV Demo
-  description: Maf pay transation demo
+  name: Valid Parquet file testing
+  description: Valid parquet file containing the test data
   category: customer
   image: http://google.com
   autofillUserinfo: true
-  tags: []
+  tags: [Parquet, DP]
   extra: {}
 inputPorts:
-  - alias: s3_maf_pay_tx
-    description: Maf pay transation test data S3 bucket
+  - alias: s3_parquet_testing
+    description: Test data parquet file in S3 bucket
     tags: []
     extra: {}
     syncType: pull
     type: s3
     sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
     entityId:
-      alias: maf_pay_tx
+      alias: dv_parquet_Test
       createEntity: true
       type: s3-bucket
-      entityPath: "s3a://dp-input-bucket/mpay-tx"
-      entityFilterPatternMatch: "*.csv"
-      incrematalFetchNamePattern: "MAFPay_Transactions_#tansationDate#_*"
-      incremetal: true
+      entityPath: s3://dp-input-bucket/Parquet_Files/
+      entityFilterPatternMatch: "*.parquet"
+      incrematalFetchNamePattern: ""
+      incremetal: false
       sourceSchemaUrn: urn:dv:schema:9d4716d4
       projectSchemaUrn: urn:dv:schema:9d4716d6
       filter: ""
-      fileFormat: csv
-      delimiter: ","
-      header: true
+      fileFormat: parquet
       processingTimeColumn:
         - created_date
       actualTimeColumn:
@@ -38,7 +36,7 @@ inputPorts:
         - '*'
         
 stateManagement:
-  alias: maf_pay_tx
+  alias: dv_parquet
   refreshInterval: 00 10 * * *
   updateStrategy: append
   productStoreState:
@@ -51,4 +49,4 @@ stateManagement:
       changeTrackColumns:
         - nothing
 transformation:
-  sql: select * from maf_pay_tx
+  sql: select * from dv_parquet_Test
