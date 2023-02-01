@@ -1,7 +1,7 @@
 ---
 version: 0.0.1
 discoveryPort:
-  name: Valid Parquet file testing
+  name: Create DP with a valid Parquet file
   description: Valid parquet file containing the test data
   category: customer
   image: http://google.com
@@ -20,7 +20,7 @@ inputPorts:
       alias: dv_parquet_Test
       createEntity: true
       type: s3-bucket
-      entityPath: s3://dp-input-bucket/Parquet_Files/
+      entityPath: s3a://dp-input-bucket/Parquet_Files/
       entityFilterPatternMatch: "*.parquet"
       incrematalFetchNamePattern: ""
       incremetal: false
