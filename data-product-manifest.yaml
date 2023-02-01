@@ -29,7 +29,6 @@ inputPorts:
       filter: ""
       fileFormat: parquet
       delimiter: ","
-      header: true
       processingTimeColumn:
         - created_date
       actualTimeColumn:
