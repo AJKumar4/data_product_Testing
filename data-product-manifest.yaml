@@ -22,6 +22,8 @@ inputPorts:
       type: s3-bucket
       entityPath: s3a://dp-input-bucket/Parquet_Files/
       entityFilterPatternMatch: "*.parquet"
+      delimiter: ','
+      header: true
       incrematalFetchNamePattern: ""
       incremetal: false
       sourceSchemaUrn: urn:dv:schema:9d4716d4
