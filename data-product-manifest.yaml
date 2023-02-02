@@ -42,7 +42,7 @@ stateManagement:
   refreshInterval: 00 10 * * *
   updateStrategy: append
   productStoreState:
-    logicalSchemaUrn: 
+    logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: urn:dv:datasource:6d4714c3
