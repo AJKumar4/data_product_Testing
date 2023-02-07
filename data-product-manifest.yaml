@@ -1,8 +1,8 @@
 ---
 version: 0.0.1
 discoveryPort:
-  name: Maf Pay Tx CSV Demo
-  description: Maf pay transation demo
+  name: invalid project URN
+  description: 
   category: customer
   image: http://google.com
   autofillUserinfo: true
@@ -25,7 +25,7 @@ inputPorts:
       incrematalFetchNamePattern: "MAFPay_Transactions_#tansationDate#_*"
       incremetal: true
       sourceSchemaUrn: urn:dv:schema:9d4716d4
-      projectSchemaUrn: urn:dv:schema:9d4716d6
+      projectSchemaUrn: 
       filter: ""
       fileFormat: csv
       delimiter: ","
