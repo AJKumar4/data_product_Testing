@@ -2,7 +2,7 @@
 version: 0.0.1
 discoveryPort:
   name: invalid project URN
-  description: 
+  description: Verifying DP creation using invalid projectSchema
   category: customer
   image: http://google.com
   autofillUserinfo: true
