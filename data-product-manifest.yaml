@@ -15,7 +15,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
+    sourceUrn: dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
     entityId:
       alias: maf_pay_tx
       createEntity: true
@@ -44,23 +44,7 @@ stateManagement:
   refreshInterval: 00 10 * * *
   updateStrategy: append
   productStoreState:
-    logicalSchema: 
-    {
-  "name": "testschema",
-  "type": "logicalSchema",
-  "tags": [
-    "string"
-  ],
-  "schemaDefinition": [
-    {
-      "primaryKey": [
-        "string"
-      ],
-      "structure": true,
-      "isActive": true,
-      "version": 1
-    }
-  ],
+   logicalSchemaURN: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
   "createdTimestamp": "2023-01-16T05:33:42.706Z",
   "createdBy": "dummy-user"
 }
