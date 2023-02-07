@@ -44,10 +44,7 @@ stateManagement:
   refreshInterval: 00 10 * * *
   updateStrategy: append
   productStoreState:
-   logicalSchemaURN: urn:dv:datasource:1e401b2b-cdb7-4a82-98cd-5784f4568c9b
-  "createdTimestamp": "2023-01-16T05:33:42.706Z",
-  "createdBy": "dummy-user"
-}
+    logicalSchemaURN: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: urn:dv:datasource:6d4714c3
