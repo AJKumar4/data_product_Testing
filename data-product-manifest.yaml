@@ -45,6 +45,7 @@ stateManagement:
   updateStrategy: append
   productStoreState:
     logicalSchemaUrn: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
+    logicalSchema: test
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: urn:dv:datasource:6d4714c3
